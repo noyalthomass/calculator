@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="main">
+      <div class="first">
+        <h3>Calculator</h3>
+        <input type="text" id="result" placeholder="Result">
+
+      </div class="part">
+
+      <div class="second">
+        <button class="button2" onclick="clearBox()">C</button>
+        <button class="button">X</button>
+        <button class="button" onclick="displayValue('%')">%</button>
+        <button class="button" onclick="displayValue('/')">/</button>
+      </div>
+      <div class="third">
+        <button class="button1" onclick="displayValue(1)">1</button>
+        <button class="button1"onclick="displayValue(2)">2</button>
+        <button class="button1"onclick="displayValue(3)">3</button>
+        <button class="button" onclick="displayValue('*')">*</button>
+      </div>
+      <div class="forth">
+        <button class="button1"onclick="displayValue(4)">4</button>
+        <button class="button1"onclick="displayValue(5)">5</button>
+        <button class="button1"onclick="displayValue(6)">6</button>
+        <button class="button"onclick="displayValue('+')">+</button>
+      </div>
+      <div class="fifth">
+        <button class="button1"onclick="displayValue(7)">7</button>
+        <button class="button1"onclick="displayValue(8)">8</button>
+        <button class="button1"onclick="displayValue(9)">9</button>
+        <button class="button"onclick="displayValue('-')">-</button>
+      </div>
+      <div class="sixth">
+        <button class="button">GT</button>
+        <button class="button"onclick="displayValue(0)">0</button>
+        <button class="button" onclick="displayValue('.')">.</button>
+        <button class="button" onclick="evaluateExpression('=')">=</button>
+      </div>
+  </div>  
+</body>
+<script src="script.js" defer></script>
+</html>
